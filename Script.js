@@ -74,7 +74,7 @@ window.onload
 	}, supportsPassive ? {passive:true} : false);
 
 	//click event on navbar
-	navbar.addEventListener("click", function(e){
+	/*navbar.addEventListener("click", function(e){
 		if(e.target !== e.currentTarget)
 		{	
 			b(e.target);
@@ -105,7 +105,7 @@ window.onload
 
 		}
 		
-	});
+	});*/
 
 	function b(target)
 	{
