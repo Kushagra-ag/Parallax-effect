@@ -1,0 +1,294 @@
+@charset "UTF-8";
+
+@font-face
+{
+	
+	font-family: 'Timeburner';
+	src: url('fonts/Timeburnernormal.ttf');
+
+}
+
+@font-face
+{
+	
+	font-family: 'BebasNeue';
+	src: url('fonts/BebasNeue.otf');
+
+}
+
+html
+{
+	font-size: 1em;
+}
+
+body
+{
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+
+main
+{
+	
+}
+
+nav
+{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-flow: column nowrap;
+	        flex-flow: column nowrap;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;	
+	position: absolute;
+	top: 15vh;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	width: 11%;
+	height: 400px;
+	max-height: 100vh;
+	z-index: 99;
+}
+
+nav>div
+{
+	padding: 10px;
+	color: #777;
+	font-family: timeburner,arial;
+	letter-spacing: 1px;
+	font-size: 1.2em;
+	font-weight: bold;
+	-webkit-writing-mode : vertical-lr;
+	    -ms-writing-mode : tb-lr;
+	        writing-mode : vertical-lr;
+	border-right: none;
+	cursor: pointer;
+}
+
+nav>div:hover
+{
+	color: #000;
+}
+
+.active_nav
+{
+	border-right: 3px solid #000;
+	color: #000;
+}
+
+
+.parallax
+{
+	display: block;
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	-webkit-perspective: 100px;
+	        perspective: 100px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	transform-style: preserve-3d; 
+	perspective-origin: 100% 50%;
+}
+
+.parallax::-webkit-scrollbar 
+{
+	display: none;
+}
+
+nav::-webkit-scrollbar 
+{
+	display: none;
+}
+
+.parallax_grp
+{
+	position: relative;
+	height: 100vh;
+	/*transform: translate3d(611px, 0, -1625px) rotateY(24deg);
+	
+	box-shadow: -17px 6px 0px 0px black;*/
+	transform-style: preserve-3d;
+}
+
+.parallax_layer
+{
+	position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform-origin: 100% 50% 0;
+}
+
+.container
+{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-flow: row nowrap;
+	        flex-flow: row nowrap;
+	padding-top: 50px;
+	-webkit-transform: translateZ(0);
+	        transform: translateZ(0);
+}
+
+.child1
+{
+	-webkit-box-flex: 1;
+	    -ms-flex: 1 0.5 40%;
+	        flex: 1 0.5 40%;
+	boreder: 1px solid black;
+	background-color: #d4cbc4;
+	height: 90vh;
+	
+}
+
+.child2
+{
+	-webkit-box-flex: 1;
+	    -ms-flex: 1 1 60%;
+	        flex: 1 1 60%;
+	background-image: url("images/bg5.png");
+	max-height: 90vh;
+}
+
+.parallax_deep
+{
+	background-color: #fff;
+	-webkit-transform: translateZ(-390px) scale(5);
+	        transform: translateZ(-390px) scale(5);
+	z-index: 10;
+}
+
+.parallax_fore
+{
+	background-color: #fff;
+	-webkit-transform: translateZ(-75px) scale(2);
+	        transform: translateZ(-75px) scale(2);
+	z-index: 30;
+}
+
+.parallax_middle
+{
+	background-color: #fff;
+	-webkit-transform: translateZ(-255px) scale(3);
+	        transform: translateZ(-255px) scale(3);
+	z-index: 20;
+}
+
+.parallax_bg_img
+{
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.bg2
+{
+	background-image: url("images/main-bg.jpg");
+}
+
+.bg3
+{
+	background-image: url("images/bg4.png");
+}
+
+.bg5
+{
+	background-image: url("images/bg3.png");
+}
+
+.bg7
+{
+	background-image: url("images/bg7.png");
+}
+
+#grp1
+{
+	background-color: #fff;
+	z-index: 50;
+	
+}
+
+#grp2
+{
+	z-index: 40;
+	height: 70vh;
+}
+
+#grp3
+{
+	z-index: 30;
+	
+}
+
+#grp4
+{
+	height: 435vh;
+	z-index: 20;
+}
+
+#grp5
+{
+	z-index: 10;
+}
+
+#grp6
+{
+	height: 435vh;
+	z-index: 5;
+}
+
+#grp7
+{
+	z-index: 1;
+}
+
+.text
+{
+	font-family: timeburner,'Times New Roman';
+	background-color: transparent !important;
+	
+	left: 21%;
+	top: 93%;
+	color: #fff;
+}
+
+#grp1>.text
+{
+	font-family: bebasneue,'Times New Roman';
+	font-size: 6rem;
+	letter-spacing: 2px;
+	left: 37%;
+	top: 55%;
+	transform: none;
+}
+
+#grp2>.text
+{
+	
+	font-size: 2rem;
+	z-index: 40;
+}
+
+#grp4>.text
+{
+	font-size: 2rem;
+	z-index: 30;
+}
+
+#grp6>.text
+{
+	font-size: 2rem;
+	z-index: 30;
+}
