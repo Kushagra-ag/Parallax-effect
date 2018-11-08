@@ -21,7 +21,7 @@ window.onload
 	//const sec6 = document.querySelector('#grp6');
 	//const sec7 = document.querySelector('#grp7');
 	
-	var p = document.querySelector('.parallax');
+	let p = document.querySelector('.parallax');
 
 
 	let w_x = window.innerWidth;
