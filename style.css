@@ -159,7 +159,7 @@ nav::-webkit-scrollbar
 	-webkit-box-flex: 1;
 	    -ms-flex: 1 1 60%;
 	        flex: 1 1 60%;
-	background-image: url("images/bg5.png");
+	background-image: url("images/bg1.webp");
 	max-height: 90vh;
 }
 
@@ -193,19 +193,14 @@ nav::-webkit-scrollbar
 	background-size: cover;
 }
 
-.bg2
-{
-	background-image: url("images/main-bg.jpg");
-}
-
 .bg3
 {
-	background-image: url("images/bg4.png");
+	background-image: url("images/bg3.webp");
 }
 
 .bg5
 {
-	background-image: url("images/bg3.png");
+	background-image: url("images/bg5.webp");
 }
 
 .bg7
