@@ -287,3 +287,31 @@ nav::-webkit-scrollbar
 	font-size: 2rem;
 	z-index: 30;
 }
+
+@media screen and (max-width: 490px)
+{
+	#grp1>.text
+	{
+		font-size: 3rem;
+	}
+
+	#grp2>.text
+	{
+		font-size: 1.5rem;
+	}
+
+	#grp4>.text
+	{
+		font-size: 1.5rem;
+	}
+
+	#grp6>.text
+	{
+		font-size: 1.5rem;
+	}
+
+	nav>div
+	{
+		font-size: 1rem;
+	}
+}
