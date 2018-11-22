@@ -259,6 +259,12 @@ nav::-webkit-scrollbar
 	color: #fff;
 }
 
+.label
+{
+	height: 0;
+	width: 0;
+}
+
 #grp1>.text
 {
 	font-family: bebasneue,'Times New Roman';
