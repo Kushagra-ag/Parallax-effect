@@ -18,6 +18,7 @@ window.onload
 	const sec3 = document.querySelector('#grp4>div.text');
 	const sec4 = document.querySelector('#grp6>div.text');
 	const navbar = document.querySelector('nav');
+	const labels = document.querySelectorAll('.label');
 	//const sec6 = document.querySelector('#grp6');
 	//const sec7 = document.querySelector('#grp7');
 	
@@ -74,38 +75,32 @@ window.onload
 	}, supportsPassive ? {passive:true} : false);
 
 	//click event on navbar
-	/*navbar.addEventListener("click", function(e){
+	navbar.addEventListener("click", function(e){
 		if(e.target !== e.currentTarget)
 		{	
-			b(e.target);
-
 			if(e.target === e1)
 			{
-				let scroll = document.querySelector('#grp2>div.parallax_fore');
-				sec1.scrollIntoView({behavior: "smooth", block: "start"});
+				sec1.scrollIntoView({behavior: "smooth", block: "end"});
 			}
 
 			else if(e.target === e2)
 			{
-				let scroll = document.querySelector('#grp2>div.parallax_fore');
-				scroll.scrollIntoView({behavior: "smooth", block: "end"});
+				labels[0].scrollIntoView({behavior: "smooth", block: "start"});
 			}
 
 			else if(e.target === e3)
 			{
-				let scroll = document.querySelector('#grp2>div.parallax_fore');
-				scroll.scrollIntoView({behavior: "smooth", block: "start"});
+				labels[1].scrollIntoView({behavior: "smooth", block: "start"});
 			}
 
 			else if(e.target === e4)
 			{
-				let scroll = document.querySelector('#grp2>div.parallax_fore');
-				scroll.scrollIntoView({behavior: "smooth", block: "start"});
+				labels[2].scrollIntoView({behavior: "smooth", block: "start"});
 			}
 
 		}
 		
-	});*/
+	});
 
 	function b(target)
 	{
