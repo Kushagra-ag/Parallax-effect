@@ -240,8 +240,6 @@ nav::-webkit-scrollbar
 {
 	font-family: timeburner,'Times New Roman';
 	background-color: transparent !important;
-	
-	left: 21%;
 	top: 93%;
 	color: #fff;
 }
@@ -341,6 +339,7 @@ picture
 	{
 		font-family: timeburner,'Times New Roman';
 		background-color: transparent !important;
+		left: 21%;
 		top: 93%;
 		color: #fff;
 	}
