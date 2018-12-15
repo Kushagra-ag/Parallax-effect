@@ -38,39 +38,41 @@ nav
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	    -ms-flex-flow: column nowrap;
-	        flex-flow: column nowrap;
+	    -ms-flex-flow: row nowrap;
+	        flex-flow: row nowrap;
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;	
+	
+	background: linear-gradient(to right, rgba(0,0,0,0) 0%, 
+									  rgba(255,255,255,0.2) 25%,
+									  rgba(255,255,255,0.1) 70%,
+									  rgba(255,255,255,0.05) 100%);
+	box-shadow: 1px 1px 35px 5px rgba(0,0,0,0.3), inset 0px 0px 2px rgba(255,255,255,0.3);
 	position: absolute;
-	top: 15vh;
+	padding: 0 15px;
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
-	width: 11%;
-	height: 400px;
-	max-height: 100vh;
+	width: 100vw;
+	height: auto;
 	z-index: 99;
+	-webkit-tap-highlight-color: transparent;
 }
 
 nav>div
 {
 	padding: 10px;
-	color: #777;
+	color: #aaa;
 	font-family: timeburner,arial;
 	letter-spacing: 1px;
-	font-size: 1.2em;
+	font-size: 1em;
 	font-weight: bold;
-	-webkit-writing-mode : vertical-lr;
-	    -ms-writing-mode : tb-lr;
-	        writing-mode : vertical-lr;
 	border-right: none;
 	cursor: pointer;
+	-webkit-tap-highlight-color: transparent;
 }
 
 nav>div:hover
@@ -80,7 +82,7 @@ nav>div:hover
 
 .active_nav
 {
-	border-right: 3px solid #000;
+	border-bottom: 1px solid #000;
 	color: #000;
 }
 
@@ -138,7 +140,7 @@ nav::-webkit-scrollbar
 	-webkit-box-direction: normal;
 	    -ms-flex-flow: row nowrap;
 	        flex-flow: row nowrap;
-	padding-top: 50px;
+	padding-top: 43px;
 	-webkit-transform: translateZ(0);
 	        transform: translateZ(0);
 }
@@ -193,21 +195,6 @@ nav::-webkit-scrollbar
 	background-size: cover;
 }
 
-.bg3
-{
-	background-image: url("images/bg3.webp");
-}
-
-.bg5
-{
-	background-image: url("images/bg5.webp");
-}
-
-.bg7
-{
-	background-image: url("images/bg7.png");
-}
-
 #grp1
 {
 	background-color: #fff;
@@ -259,16 +246,10 @@ nav::-webkit-scrollbar
 	color: #fff;
 }
 
-.label
-{
-	height: 0;
-	width: 0;
-}
-
 #grp1>.text
 {
 	font-family: bebasneue,'Times New Roman';
-	font-size: 6rem;
+	font-size: 3rem;
 	letter-spacing: 2px;
 	left: 37%;
 	top: 55%;
@@ -278,46 +259,81 @@ nav::-webkit-scrollbar
 #grp2>.text
 {
 	
-	font-size: 2rem;
+	font-size: 1.5rem;
 	z-index: 40;
 }
 
 #grp4>.text
 {
-	font-size: 2rem;
+	font-size: 1.5rem;
 	z-index: 30;
 }
 
 #grp6>.text
 {
-	font-size: 2rem;
+	font-size: 1.5rem;
 	z-index: 30;
 }
 
-@media screen and (max-width: 490px)
+.label
+{
+	height: 0;
+	width: 0;
+}
+
+picture
+{
+	overflow: hidden;
+}
+
+
+@media screen and (min-width: 490px)
 {
 	#grp1>.text
 	{
-		font-size: 3rem;
+		font-size: 6rem;
 	}
 
 	#grp2>.text
 	{
-		font-size: 1.5rem;
+		font-size: 2rem;
 	}
 
 	#grp4>.text
 	{
-		font-size: 1.5rem;
+		font-size: 2rem;
 	}
 
 	#grp6>.text
 	{
-		font-size: 1.5rem;
+		font-size: 2rem;
 	}
+
+	nav
+	{
+		-ms-flex-flow: column nowrap;
+	        flex-flow: column nowrap;
+	    justify-content: space-around;
+	    top: 15vh;
+	    width: 11%;
+	    height: 400px;
+	    max-height: 100vh;
+	    background: transparent;
+	    box-shadow: none;
+	}
+
 
 	nav>div
 	{
-		font-size: 1rem;
+		font-size: 1.2rem;
+		-webkit-writing-mode : vertical-lr;
+	    -ms-writing-mode : tb-lr;
+	        writing-mode : vertical-lr;
+	}
+
+	.active_nav
+	{
+		border-right: 3px solid #000;
+		border-bottom: none;
 	}
 }
