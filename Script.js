@@ -28,7 +28,7 @@ window.onload
 	let w_x = window.innerWidth;
 	let w_y = window.innerHeight;
 
-	
+	//debouncing scroll function
 	let debounce;
 	let e1 = document.querySelector('nav>div:nth-child(1)');
 	let e2 = document.querySelector('nav>div:nth-child(2)');
@@ -66,10 +66,6 @@ window.onload
 		else if(coord4.top>(-0.5*w_x) && w_x - coord4.top > 0.5*w_x)
 
 			b(e4);
-
-
-		
-
 		
 	}, 300);
 	}, supportsPassive ? {passive:true} : false);
@@ -78,24 +74,30 @@ window.onload
 	navbar.addEventListener("click", function(e){
 		if(e.target !== e.currentTarget)
 		{	
+			//b(e.target);
+
 			if(e.target === e1)
 			{
-				sec1.scrollIntoView({behavior: "smooth", block: "end"});
+				let scroll = sec1;
+				scroll.scrollIntoView({behavior: "smooth", block: "end"});
 			}
 
 			else if(e.target === e2)
 			{
-				labels[0].scrollIntoView({behavior: "smooth", block: "start"});
+				let scroll = labels[0];
+				scroll.scrollIntoView({behavior: "smooth", block: "start"});
 			}
 
 			else if(e.target === e3)
 			{
-				labels[1].scrollIntoView({behavior: "smooth", block: "start"});
+				let scroll = labels[1];
+				scroll.scrollIntoView({behavior: "smooth", block: "start"});
 			}
 
 			else if(e.target === e4)
 			{
-				labels[2].scrollIntoView({behavior: "smooth", block: "start"});
+				let scroll = labels[2];
+				scroll.scrollIntoView({behavior: "smooth", block: "start"});
 			}
 
 		}
