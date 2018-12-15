@@ -19,9 +19,6 @@ window.onload
 	const sec4 = document.querySelector('#grp6>div.text');
 	const navbar = document.querySelector('nav');
 	const labels = document.querySelectorAll('.label');
-	//const sec6 = document.querySelector('#grp6');
-	//const sec7 = document.querySelector('#grp7');
-	
 	let p = document.querySelector('.parallax');
 
 
@@ -49,18 +46,28 @@ window.onload
 		
 
 		if(coord1.top>(-0.5*w_x) && w_x - coord1.top > 0.4*w_x)
-			
+		{	
 			b(e1);
-
-
+			document.querySelector('#grp3>picture>source:nth-child(1)').setAttribute('srcset','./images/bg3.webp');
+			document.querySelector('#grp3>picture>source:nth-child(2)').setAttribute('srcset','./images/bg3.png');
+			document.querySelector('#grp3>picture>img').setAttribute('src','./images/bg3.png');
+		}
 		else if(coord2.top>(-0.4*w_x) && w_x - coord2.top > 0.8*w_x)
-	
+		{
 			b(e2);
+			document.querySelector('#grp5>picture>source:nth-child(1)').setAttribute('srcset','./images/bg5.webp');
+			document.querySelector('#grp5>picture>source:nth-child(2)').setAttribute('srcset','./images/bg5.png');
+			document.querySelector('#grp5>picture>img').setAttribute('src','./images/bg5.png');
+		}
 
 
 		else if(coord3.top>(-0.5*w_x) && w_x - coord3.top > 0.5*w_x)
-
+		{
 			b(e3);
+			document.querySelector('#grp7>picture>source:nth-child(1)').setAttribute('srcset','./images/bg7.webp');
+			document.querySelector('#grp7>picture>source:nth-child(2)').setAttribute('srcset','./images/bg7.png');
+			document.querySelector('#grp7>picture>img').setAttribute('src','./images/bg7.png');
+		}
 
 		
 		else if(coord4.top>(-0.5*w_x) && w_x - coord4.top > 0.5*w_x)
@@ -69,6 +76,7 @@ window.onload
 		
 	}, 300);
 	}, supportsPassive ? {passive:true} : false);
+
 
 	//click event on navbar
 	navbar.addEventListener("click", function(e){
