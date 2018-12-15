@@ -4,15 +4,16 @@
 	<meta charset="UTF-8" lang="en">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
 	<title>
-		Parallax Effect
+		Parallax effect
 	</title>
 </head>
 <body>
 	<main>
 		<nav>
 			<div class="active_nav">
-				Home
+				 Home 
 			</div>
 			<div>
 				About
@@ -50,31 +51,50 @@
 				<div class="parallax_layer parallax_fore"></div>
 				
 			</div>
+
 			<div class="parallax_grp label"></div>
 			<div class="parallax_grp" id="grp3">
-				<div class="parallax_layer parallax_deep parallax_bg_img bg3"></div>
+				<picture class="parallax_layer parallax_deep parallax_bg_img">
+					<source srcset="./images/bg3.webp" type="image/webp">
+					<source srcset="./images/bg3.png" type="image/png">
+					<img src="./images/bg3.png">
+				</picture>
 			</div>
+		
 				
 			<div class="parallax_grp" id="grp4">
 				<div class="parallax_layer parallax_middle text">
-					<h2>Section 3</h2><br/>This<br/>webpage is web responsive.<br/>
+					<h2>Section 3</h2><br/>This is a<br/>mobile first & web responsive webpage.<br/>
 				</div>
 				<div class="parallax_layer parallax_fore" style="height: 270vh;"></div>
-			</div>
+				</div>
+			
 			<div class="parallax_grp label"></div>
+			
 			<div class="parallax_grp" id="grp5">
-				<div class="parallax_layer parallax_deep parallax_bg_img bg5"></div>
+				<picture class="parallax_layer parallax_deep parallax_bg_img">
+					<source srcset="./images/bg5.webp" type="image/webp">
+					<source srcset="./images/bg5.png" type="image/png">
+					<img src="./images/bg5.png">
+				</picture>
 			</div>
+		
 
 			<div class="parallax_grp" id="grp6">
 				<div class="parallax_layer parallax_middle text">
-					<h2>Section 4</h2><br/>This<br/>is only a template.<br/>
+					<h2>Section 4</h2><br/>This<br/>is Section 4.<br/>
 				</div>
 				<div class="parallax_layer parallax_fore" style="height: 280vh;"></div>
-			</div>
+				</div>
+
 			<div class="parallax_grp label"></div>
+
 			<div class="parallax_grp" id="grp7">
-				<div class="parallax_layer parallax_deep parallax_bg_img bg7"></div>
+				<picture class="parallax_layer parallax_deep parallax_bg_img">
+					<source srcset="./images/bg7.webp" type="image/webp">
+					<source srcset="./images/bg7.png" type="image/png">
+					<img src="./images/bg7.png">
+				</picture>
 			</div>
 		</div>
 	</main>
