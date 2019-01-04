@@ -1,5 +1,5 @@
 # Parallax-Effect
-Working link to the website - [Parallax Effect](https://parallaxeffect.netlify.com/) 
+Working link to the website - [Parallax Effect](https://parallaxeffect.netlify.com/) <br/>
 ![Screenshot](../master/images/screenshot.JPG)<br/>
 
 This repo showcases the `Parallax Effect`, `Lazy lodaing` and the `Debouncing` technique. <br/><br/>
